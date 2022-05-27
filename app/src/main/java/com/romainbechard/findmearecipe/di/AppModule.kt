@@ -5,6 +5,7 @@ import com.romainbechard.findmearecipe.FindMeARecipeApplication
 import com.romainbechard.findmearecipe.data.source.DataSource
 import com.romainbechard.findmearecipe.data.source.local.LocalDataSource
 import com.romainbechard.findmearecipe.data.source.remote.RemoteDataSource
+import com.romainbechard.findmearecipe.di.NetworkModule.providesApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -30,7 +31,9 @@ object AppModule {
     @DataRemoteSource
     @Provides
     fun provideRemoteDataSource(): DataSource {
-        return RemoteDataSource()
+        return RemoteDataSource(
+            providesApi()
+        )
     }
 
     @Singleton

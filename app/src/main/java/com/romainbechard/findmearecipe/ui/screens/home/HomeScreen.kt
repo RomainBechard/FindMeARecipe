@@ -1,4 +1,4 @@
-package com.romainbechard.findmearecipe.ui.screens
+package com.romainbechard.findmearecipe.ui.screens.home
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavController

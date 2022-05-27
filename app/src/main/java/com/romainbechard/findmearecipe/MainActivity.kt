@@ -7,7 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.romainbechard.findmearecipe.ui.screens.HomeScreen
+import com.romainbechard.findmearecipe.ui.screens.home.HomeScreen
 import com.romainbechard.findmearecipe.ui.screens.settings.SettingsScreen
 import com.romainbechard.findmearecipe.ui.theme.FindMeARecipeTheme
 
