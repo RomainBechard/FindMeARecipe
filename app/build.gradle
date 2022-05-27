@@ -70,6 +70,13 @@ dependencies {
     //Image
     implementation "io.coil-kt:coil-compose:$coilVersion"
 
+    //Local Database
+    implementation "androidx.room:room-runtime:$roomVersion"
+    kapt "androidx.room:room-compiler:$roomVersion"
+    implementation "androidx.room:room-ktx:$roomVersion"
+    implementation "androidx.room:room-runtime:$roomVersion"
+    kapt "androidx.room:room-compiler:$roomVersion"
+
     //Test
     androidTestImplementation("org.mockito:mockito-android:$mockitoVersion")
     testImplementation("org.mockito:mockito-inline:$mockitoVersion")
